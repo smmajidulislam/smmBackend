@@ -15,6 +15,10 @@ connectDB();
 getServices();
 getCategory();
 
+// routes
+app.get("/", async (req, res) => {
+  res.send("Hello World!");
+});
 // public routes
 app.use("/api", publicRouter);
 // private routes
